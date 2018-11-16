@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <attr name="primaryTextColor" format="reference"/>
+  <attr name="buttonNormalColor" format="reference"/>
+  <attr name="buttonHighlightColor" format="reference" />
+  <attr name="buttonTextColor" format="reference" />
+  <attr name="iconColor" format="reference" />
+  <attr name="textViewStyle" format="reference" />
+
+  <declare-styleable name="FloatingTextButton">
+    <attr name="floating_left_icon" format="reference" />
+    <attr name="floating_right_icon" format="reference" />
+    <attr name="floating_title" format="string|reference" />
+    <attr name="floating_title_color" format="reference|color" />
+    <attr name="floating_background_color" format="reference|color" />
+  </declare-styleable>
+  
+</resources>

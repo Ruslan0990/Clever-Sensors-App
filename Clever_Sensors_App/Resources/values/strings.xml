@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clever Sensors App</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop_tracking">Stop tracking</string>
+    <string name="start">START TRACKING</string>
+    <string name="stop">STOP TRACKING</string>
+    <string name="notification_text">The app is tracking your sensors.</string>
+</resources>

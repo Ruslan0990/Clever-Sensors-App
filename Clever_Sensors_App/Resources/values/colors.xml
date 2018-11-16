@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Blue Theme Colors -->
+    <color name="colorPrimary">#3949AB</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF0266</color>
+  <color name="primaryText">#3c3c3c</color>
+  <color name="secondaryText">#757575</color>
+  
+  <color name="icon">#5d1049</color>
+  <color name="buttonNormal">#5d1049</color>
+  <color name="buttonHighlight">#8d3f75</color>
+  <color name="buttonText">#FFFFFF</color>  
+  <color name="textDarkPrimary">#DE000000</color>
+  
+  <!-- Green Theme Colors -->
+  <color name="mintColorPrimary">#76be2f</color>
+  <color name="mintColorPrimaryDark">#438d00</color>
+  <color name="mintColorAccent">#f9a825</color>
+  <color name="mintPrimaryText">#3c3c3c</color>
+  <color name="mintIcon">#ff554f</color>
+  <color name="mintButtonNormal">#ff554f</color>
+  <color name="mintButtonHighlight">#ff897b</color>
+  <color name="mintButtonText">#FFFFFF</color>
+</resources>

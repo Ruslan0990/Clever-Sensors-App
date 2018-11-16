@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Blue application theme. -->
+  <style name="Theme.App.Lilac" parent="Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/mintColorPrimary</item>
+    <item name="colorPrimaryDark">@color/mintColorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="primaryTextColor">@color/primaryText</item>
+    <item name="buttonNormalColor">@color/buttonNormal</item>
+    <item name="buttonHighlightColor">@color/buttonHighlight</item>
+    <item name="buttonTextColor">@color/buttonText</item>
+    <item name="iconColor">@color/icon</item>
+    <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+    <item name="colorControlHighlight">@color/ripple_material_dark</item>
+    <item name="colorButtonNormal">@color/button_material_dark</item>
+    <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>    
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+  </style>
+
+  <!-- Green application theme. -->
+  <style name="Theme.App.Mint" parent="Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/mintColorAccent</item>
+    <item name="primaryTextColor">@color/mintPrimaryText</item>
+    <item name="buttonNormalColor">@color/mintButtonNormal</item>
+    <item name="buttonHighlightColor">@color/mintButtonHighlight</item>
+    <item name="buttonTextColor">@color/mintButtonText</item>
+    <item name="iconColor">@color/mintIcon</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+  </style>
+  
+</resources>

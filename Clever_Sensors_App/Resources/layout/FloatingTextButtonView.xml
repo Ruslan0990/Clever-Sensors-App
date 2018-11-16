@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/layout_button_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"      
+      android:clickable="true"
+      android:focusable="true"
+      app:cardElevation="2dp"
+      android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="UseCompoundDrawables"  >
+
+      <ImageView
+          android:id="@+id/layout_button_image_left"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:layout_margin="4dp"
+          android:visibility="gone"
+          tools:ignore="ContentDescription,RtlHardcoded"  />
+
+      <TextView
+          android:id="@+id/layout_button_text"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="wrap_content"
+          android:layout_height="28dp"
+          android:layout_margin="4dp"
+          android:maxLines="1"
+          android:textAllCaps="true"
+          android:textStyle="bold"
+          tools:ignore="MissingPrefix,RtlHardcoded,RtlSymmetry"       />
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+</merge>
