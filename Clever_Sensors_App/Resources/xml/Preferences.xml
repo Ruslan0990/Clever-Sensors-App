@@ -26,7 +26,7 @@
     <Preference android:title="Open Source"
             android:summary="Find the code on GitHub">
       <intent android:action="android.intent.action.VIEW"
-              android:data="https://github.com/Ruslan0990" />
+              android:data="https://github.com/Ruslan0990/Clever-Sensors-App" />
     </Preference>    
   </PreferenceCategory>
   

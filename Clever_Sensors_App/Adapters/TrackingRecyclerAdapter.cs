@@ -13,14 +13,14 @@ namespace Clever_Sensors_App.Adapters
     {
         public event EventHandler<int> ItemClick;
         
-        List<TrackingMetaData> mDataList;
+        List<MotionSensorData> mDataList;
         Context mContext;
         public TrackingRecyclerAdapter(Context context )
         {
             mContext = context;      
         }
 
-        public void RefreshSensorsData(List<TrackingMetaData> dataList)
+        public void RefreshSensorsData(List<MotionSensorData> dataList)
         {
             mDataList?.Clear();
             mDataList = dataList;

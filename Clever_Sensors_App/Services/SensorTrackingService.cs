@@ -29,7 +29,6 @@ namespace Clever_Sensors_App.Services
         WakeLock wklock;
         Realm mDatabase;
         MotionSensorData mSensorData;
-        TrackingMetaData mMetaData;
 
         int data_idx;
         float[] accVector = new float[3];
@@ -115,11 +114,6 @@ namespace Clever_Sensors_App.Services
                 isRunning = true;
                 var startTicks = (int)(DateTime.Now.Ticks >> 23); // retain bits 23 to 55
                 var mStartDate = DateTimeOffset.Now;
-                mMetaData = new TrackingMetaData
-                {
-                    StartTicks = startTicks,
-                    StartDate = mStartDate,
-                };
                 mSensorData = new MotionSensorData
                 {
                     StartTicks = startTicks,
@@ -163,14 +157,13 @@ namespace Clever_Sensors_App.Services
             }
 
             Bundle b = new Bundle();
-            var duration1 = DateTimeOffset.Now.Subtract(mMetaData.StartDate).TotalSeconds;
+            var duration1 = DateTimeOffset.Now.Subtract(mSensorData.StartDate).TotalSeconds;
             if (duration1> min_tracking_time)
             {
-                mMetaData.Duration = duration1;
+                mSensorData.Duration = duration1;
                 await mDatabase.WriteAsync(tempRealm =>
                 {
                     tempRealm.Add(mSensorData);
-                    tempRealm.Add(mMetaData);
                 });
                 b.PutBoolean("SavingSuccessful", true);
             }
@@ -308,7 +301,7 @@ namespace Clever_Sensors_App.Services
             // bug  this is never called????? 
             // bug in google play location service activity recognition ?
             // https://forums.xamarin.com/discussion/140484/xamarin-android-google-activity-recognition-transition-api-not-working
-            Toast.MakeText(context, "OnReceive is GoogleActivityReceiver called ", ToastLength.Long).Show();
+            Toast.MakeText(context, "OnReceive is GoogleActivityReceiver called !!!! :) ", ToastLength.Long).Show();
 
             if (ActivityTransitionResult.HasResult(intent))
             {

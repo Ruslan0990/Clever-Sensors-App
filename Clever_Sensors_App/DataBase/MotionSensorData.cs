@@ -9,6 +9,8 @@ namespace Clever_Sensors_App.Database
         [PrimaryKey]
         public int StartTicks { get; set; }
 
+        public double Duration { get; set; }
+
         public DateTimeOffset StartDate { get; set; }
 
         public IList<long> TimestampList { get;  }
